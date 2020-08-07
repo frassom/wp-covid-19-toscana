@@ -1,0 +1,86 @@
+table.list-form-table {
+	width: 100%;
+	text-align: left;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+}
+
+table.list-form-table td, table.list-form-table th {
+	padding: 15px;
+	border: 1px solid #ddd;
+}
+
+table.list-form-table td:nth-child(4) {
+	text-align: center;
+	width:18%;
+}
+
+table.list-form-table td:nth-child(3) {
+	width:30%;
+}
+
+table.list-form-table td:nth-child(4) label {
+	vertical-align: baseline
+}
+
+table.list-form-table th {
+	font-size: 1.1em;
+}
+
+table.list-form-table tr:nth-child(odd) {
+	background: #fff;
+}
+
+table.list-form-table tr:first-child {
+	text-align: center;
+}
+
+.graph-type-container:last-child {
+	margin-left: 70px;
+}
+
+.covidtoscana-start {
+	font-size: 14px;
+}
+
+.covidtoscana-start p {
+	font-size: 14px;
+}
+
+.covidtoscana-start ul {
+	padding-left: 40px;
+	list-style-type: disc;
+}
+
+.covidtoscana-start .code {
+	font-family: monospace;
+	background-color: #ddd;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+.covidtoscana-start img.example-img {
+	height: 400px;
+	width: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	background: #fff;
+}
+
+@media screen and (max-width: 1400px) {
+	table.list-form-table td:nth-child(4) {
+		width: initial;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.graph-type-container {
+		display: block;
+		padding: 5px;
+	}
+	
+	.graph-type-container:last-child {
+		margin-left: 0;
+	}
+}
