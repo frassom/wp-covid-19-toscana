@@ -15,9 +15,7 @@ if (!defined("ABSPATH")) {
 }
 
 
-if (!defined("C19T_PLUGIN_URL")) {
-	define("C19T_PLUGIN_URL", plugin_dir_url(__FILE__));
-}
+define("C19T_PLUGIN_URL", plugin_dir_url(__FILE__));
 
 
 if (is_admin()) {
