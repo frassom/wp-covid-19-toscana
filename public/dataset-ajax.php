@@ -7,7 +7,7 @@ if (!defined("ABSPATH")) {
 require_once "csv-reader.php";
 
 if (!class_exists("Covid_Toscana_Dataset_Ajax")) {
-	class Covid_Toscana_Dataset_Ajax {
+	class C19T_Dataset_Ajax {
 		
 		private static $instance = null;
 		
@@ -39,7 +39,7 @@ if (!class_exists("Covid_Toscana_Dataset_Ajax")) {
 			$dataset = array_merge(["options" => $graph_options], $provence_colors);
 			
 			try {
-				$csv = new Covid_Toscana_CSV_Reader($dataset_url);
+				$csv = new C19T_CSV_Reader($dataset_url);
 			} catch (Exception $e) {
 				wp_send_json_error("Error while opening dataset file: " . $e->getMessage());
 			}
@@ -95,6 +95,6 @@ if (!class_exists("Covid_Toscana_Dataset_Ajax")) {
 	}
 }
 
-Covid_Toscana_Dataset_Ajax::get_instance();
+C19T_Dataset_Ajax::get_instance();
 
 ?>

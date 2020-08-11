@@ -5,7 +5,7 @@ if (!defined("ABSPATH")) {
 }
 
 if (!class_exists("Covid_Toscana_Admin_Page")) {
-	class Covid_Toscana_Admin_Page {
+	class C19T_Admin_Page {
 		
 		private static $instance = null;
 		
@@ -160,9 +160,9 @@ if (!class_exists("Covid_Toscana_Admin_Page")) {
 		}
 		
 		public function enqueue_scripts() {
-			wp_enqueue_style("admin-page-style", CT_PLUGIN_URL . "admin/css/style.css");
+			wp_enqueue_style("admin-page-style", C19T_PLUGIN_URL . "admin/css/style.css");
 			wp_enqueue_style("wp-color-picker");
-			wp_enqueue_script("color-picker-handle", CT_PLUGIN_URL . "admin/js/color-picker-init.js", ["wp-color-picker"], false, true);
+			wp_enqueue_script("color-picker-handle", C19T_PLUGIN_URL . "admin/js/color-picker-init.js", ["wp-color-picker"], false, true);
 		}
 		
 		public function create_menu() {
@@ -306,13 +306,13 @@ if (!class_exists("Covid_Toscana_Admin_Page")) {
 			<span class='code'>[grafico-toscana]</span> o equivalentemente<br>
 			<span class='code'>[grafico-toscana dati="positivi_tot, positivi_att, dimessi, deceduti_tot"]</span>
 			<br>
-			<img class='example-img' src='<?php echo CT_PLUGIN_URL . "assets/toscana0.png"?>'
+			<img class='example-img' src='<?php echo C19T_PLUGIN_URL . "assets/toscana0.png"?>'
 				 alt='grafico covid toscana generale' />
 		</li>
 		<li>
 			<span class='code'>[grafico-toscana dati="tamponi"]</span>
 			<br>
-			<img class='example-img' src='<?php echo CT_PLUGIN_URL . "assets/toscana1.png"?>'
+			<img class='example-img' src='<?php echo C19T_PLUGIN_URL . "assets/toscana1.png"?>'
 				 alt='grafico covid toscana su tamponi' />
 		</li>
 		
@@ -336,13 +336,13 @@ if (!class_exists("Covid_Toscana_Admin_Page")) {
 			<span class='code'>[grafico-provincia]</span> o equivalentemente<br>
 			<span class='code'>[grafico-provincia provincia="FI" dati="positivi_tot, deceduti_tot"]</span>
 			<br>
-			<img class='example-img' src='<?php echo CT_PLUGIN_URL . "assets/provincia0.png"?>'
+			<img class='example-img' src='<?php echo C19T_PLUGIN_URL . "assets/provincia0.png"?>'
 				 alt='grafico covid Firenze generale' />
 		</li>
 		<li>
 			<span class='code'>[grafico-provincia provincia="GR" dati="positivi_inc_abs"]</span>
 			<br>
-			<img class='example-img' src='<?php echo CT_PLUGIN_URL . "assets/provincia1.png"?>'
+			<img class='example-img' src='<?php echo C19T_PLUGIN_URL . "assets/provincia1.png"?>'
 				 alt='grafico covid Grosseto su incremento positivi' />
 		</li>
 	</ul>
@@ -365,13 +365,13 @@ if (!class_exists("Covid_Toscana_Admin_Page")) {
 			<span class='code'>[grafico-confronto-province]</span> o equivalentemente<br>
 			<span class='code'>[grafico-confronto-province dato="positivi_tot", province="AR, FI, GR, LI, LU, MS, PI, PO, PT, SI"]</span>
 			<br>
-			<img class='example-img' src='<?php echo CT_PLUGIN_URL . "assets/confronto0.png"?>'
+			<img class='example-img' src='<?php echo C19T_PLUGIN_URL . "assets/confronto0.png"?>'
 				 alt='grafico di confronto sui positivi di tutte le province' />
 		</li>
 		<li>
 			<span class='code'>[grafico-confronto-province dato="deceduti_tot" province="FI, PO"]</span>
 			<br>
-			<img class='example-img' src='<?php echo CT_PLUGIN_URL . "assets/confronto1.png"?>'
+			<img class='example-img' src='<?php echo C19T_PLUGIN_URL . "assets/confronto1.png"?>'
 				 alt='grafico di confronto Firenze e Prato su deceduti' />
 		</li>
 	</ul>
@@ -418,6 +418,6 @@ if (!class_exists("Covid_Toscana_Admin_Page")) {
 	}
 }
 
-Covid_Toscana_Admin_Page::get_instance();
+C19T_Admin_Page::get_instance();
 
 ?>

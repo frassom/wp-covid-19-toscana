@@ -15,8 +15,8 @@ if (!defined("ABSPATH")) {
 }
 
 
-if (!defined("CT_PLUGIN_URL")) {
-	define("CT_PLUGIN_URL", plugin_dir_url(__FILE__));
+if (!defined("C19T_PLUGIN_URL")) {
+	define("C19T_PLUGIN_URL", plugin_dir_url(__FILE__));
 }
 
 

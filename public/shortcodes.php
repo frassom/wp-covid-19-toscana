@@ -5,7 +5,7 @@ if (!defined("ABSPATH")) {
 }
 
 if (!class_exists("Covid_Toscana_Shortcodes")) {
-	class Covid_Toscana_Shortcodes {
+	class C19T_Shortcodes {
 		
 		private static $instance = null;
 		
@@ -23,8 +23,8 @@ if (!class_exists("Covid_Toscana_Shortcodes")) {
 		}
 		
 		public function enqueue_scripts() {
-			wp_enqueue_script("chart-js", CT_PLUGIN_URL . "lib/chart.min.js", [], false, true);
-			wp_enqueue_script("covid-chart", CT_PLUGIN_URL . "public/js/covid-chart.js", ["jquery", "chart-js"], false, true);
+			wp_enqueue_script("chart-js", C19T_PLUGIN_URL . "lib/chart.min.js", [], false, true);
+			wp_enqueue_script("covid-chart", C19T_PLUGIN_URL . "public/js/covid-chart.js", ["jquery", "chart-js"], false, true);
 			wp_localize_script(
 				"covid-chart",
 				"covidAjaxObj",
@@ -89,6 +89,6 @@ if (!class_exists("Covid_Toscana_Shortcodes")) {
 	}
 }
 
-Covid_Toscana_Shortcodes::get_instance();
+C19T_Shortcodes::get_instance();
 
 ?>

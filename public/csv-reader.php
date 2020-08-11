@@ -5,7 +5,7 @@ if (!defined("ABSPATH")) {
 }
 
 if (!class_exists("Covid_Toscana_CSV_Reader")) {
-	class Covid_Toscana_CSV_Reader {
+	class C19T_CSV_Reader {
 		private $index = 0;
 		private $file;
 		private $row;
