@@ -39,6 +39,11 @@
 						minRotation: 90,
 					}
 				}]
+			},
+			layout: {
+				padding: {
+					bottom: 5,
+				}
 			}
 		};
 		
