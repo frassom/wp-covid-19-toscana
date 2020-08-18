@@ -50,6 +50,8 @@ Corso Progettazione e Produzione Multimediale UniFi
 Idea: Andrea Ferracani
 Sviluppo: Marco Frassineti, Pietro Longinetti
 
+== Screenshots ==
+1. Esempio di grafico con dati COVID-19 complessivi per la Toscana.
 
 == Changelog ==
 = 1.0 =
