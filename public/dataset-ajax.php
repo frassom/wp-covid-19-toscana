@@ -63,7 +63,7 @@ class C19T_Dataset_Ajax {
 					
 					$dataset["Toscana"]["positivi_att"][ $giorno ]		= (int) $csv->get("attualmente_positivi");
 					$dataset["Toscana"]["positivi_tot"][ $giorno ]		= (int) $csv->get("totale_casi_positivi");
-					$dataset["Toscana"]["positivi_perc"][ $giorno ]		= sprintf("%.2e", $csv->get("totale_casi_positivi") / 3729641);
+					$dataset["Toscana"]["positivi_perc"][ $giorno ]		= sprintf("%.2e", $csv->get("totale_casi_positivi") / 3729641 * 100);
 					$dataset["Toscana"]["positivi_inc_abs"][ $giorno ]	= (int) $csv->get("totale_casi_positivi") - $dataset["Toscana"]["positivi_tot"][ $giorno - 1 ];
 					$dataset["Toscana"]["deceduti_tot"][ $giorno ]		= (int) $csv->get("deceduti");
 					$dataset["Toscana"]["deceduti_inc_perc"][ $giorno ]	= sprintf("%.2e", $csv->get("deceduti_inc"));
