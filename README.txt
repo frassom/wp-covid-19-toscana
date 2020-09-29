@@ -1,6 +1,6 @@
 === COVID-19 Toscana ===
 Contributors: covid19toscana
-Tags: chart, grafici, graphs, covid-19, covid, italy, italia, toscana, firenze
+Tags: chart, grafici, graphs, visualization, covid-19, covid, coronavirus, italy, italia, toscana, firenze
 Requires at least: 4.7
 Tested up to: 5.5.1
 Requires PHP: 5.4
@@ -50,6 +50,7 @@ I valori ammissibili per quanto riguarda i parametri _«provincia»_ e _«provin
 
 == Credits ==
 Corso Progettazione e Produzione Multimediale UniFi
+Prof.: Alberto Del Bimbo
 Idea: Andrea Ferracani
 Sviluppo: Marco Frassineti, Pietro Longinetti
 
@@ -60,3 +61,8 @@ Sviluppo: Marco Frassineti, Pietro Longinetti
 == Changelog ==
 = 1.0 =
 * First release.
+
+= 1.0.1 =
+* Add bottom padding to graph
+* Fix naming conflicts with other plugins
+* Fix percentage not showing properly
