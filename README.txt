@@ -4,7 +4,7 @@ Tags: chart, grafici, graphs, visualization, covid-19, covid, coronavirus, italy
 Requires at least: 4.7
 Tested up to: 5.5.1
 Requires PHP: 5.4
-Stable tag: trunk
+Stable tag: 1.0.1
 License: GPL v2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
