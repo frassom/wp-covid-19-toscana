@@ -22,10 +22,10 @@ class C19T_Shortcodes {
 	}
 	
 	public function enqueue_scripts() {
-		wp_enqueue_script("chart-js", C19T_PLUGIN_URL . "lib/chart.min.js", [], false, true);
-		wp_enqueue_script("covid-chart", C19T_PLUGIN_URL . "public/js/covid-chart.js", ["jquery", "chart-js"], false, true);
+		wp_enqueue_script("c19t-chart-js", C19T_PLUGIN_URL . "lib/chart.min.js", [], false, true);
+		wp_enqueue_script("c19t-covid-chart", C19T_PLUGIN_URL . "public/js/covid-chart.js", ["jquery", "c19t-chart-js"], false, true);
 		wp_localize_script(
-			"covid-chart",
+			"c19t-covid-chart",
 			"covidAjaxObj",
 			[
 				"ajaxUrl"	=> admin_url("admin-ajax.php"),

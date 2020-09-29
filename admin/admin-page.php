@@ -159,9 +159,9 @@ class C19T_Admin_Page {
 	}
 	
 	public function enqueue_scripts() {
-		wp_enqueue_style("admin-page-style", C19T_PLUGIN_URL . "admin/css/style.css");
+		wp_enqueue_style("c19t-admin-page-style", C19T_PLUGIN_URL . "admin/css/style.css");
 		wp_enqueue_style("wp-color-picker");
-		wp_enqueue_script("color-picker-handle", C19T_PLUGIN_URL . "admin/js/color-picker-init.js", ["wp-color-picker"], false, true);
+		wp_enqueue_script("c19t-color-picker-handle", C19T_PLUGIN_URL . "admin/js/color-picker-init.js", ["wp-color-picker"], false, true);
 	}
 	
 	public function create_menu() {
